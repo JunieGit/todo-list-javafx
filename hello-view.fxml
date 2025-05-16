@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.todolist.TodolistController"
+            prefWidth="400" prefHeight="350">
+    <children>
+        <TextField fx:id="taskInput" layoutX="20" layoutY="20" prefWidth="260"/>
+        <Button text="Add" layoutX="290" layoutY="20" onAction="#onAddTaskClick"/>
+
+        <ListView fx:id="taskListView" layoutX="20" layoutY="60" prefWidth="350" prefHeight="200"/>
+
+        <Button text="Remove" layoutX="20" layoutY="270" onAction="#onRemoveTaskClick"/>
+        <Button text="Complete" layoutX="100" layoutY="270" onAction="#onToggleCompleteClick"/>
+        <Button text="Edit" layoutX="180" layoutY="270" onAction="#onEditTaskClick"/>
+    </children>
+</AnchorPane>
